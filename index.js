@@ -20,15 +20,13 @@ app.use(express.json());
 
 // Routes
 app.use('/api/auth', require('./routes/auth'));
+app.use('/api/events', require('./routes/events'));
+
 
 // 404
 app.use((req, res) => {
     res.status(404).sendFile(__dirname + '/public/404.html');
 });
-
-// TODO: CRUD events
-
-
 
 // Listen requests
 app.listen(process.env.PORT, () => {
