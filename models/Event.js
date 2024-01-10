@@ -33,5 +33,5 @@ EventSchema.method('toJSON', function () {
 
 
 
-module.exports = model('Evento', EventSchema);
+module.exports = model('Event', EventSchema);
 
